@@ -153,7 +153,7 @@ const Section5 = () => {
 
                 <div className="program-cta" style={{ marginTop: '56px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
                     <a href="#reserva" className="btn-apply-premium" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <span style={{ position: 'relative', zIndex: 2 }}>APLICAR AHORA</span>
+                        <span style={{ position: 'relative', zIndex: 2 }}>RESERVAR CUPO</span>
                         <div className="shimmer-effect" />
                     </a>
                     <p className="cta-micro">

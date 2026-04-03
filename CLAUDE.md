@@ -34,4 +34,33 @@ npm run preview    # Preview production build
 
 - JSX components, vanilla CSS (no CSS-in-JS, no Tailwind)
 - ESLint flat config with react-hooks and react-refresh plugins; `no-unused-vars` ignores uppercase/underscore-prefixed vars
-- Multiple `generate-*.cjs` / `process-*.cjs` scripts in root are one-off favicon/logo processing utilities (not part of the app build)
+- Multiple `generate-*.cjs` / `process-*.cjs` scripts in root are one-off favicon/logo processing utilities (not part of the app build). Run them manually if favicon assets need regeneration; they depend on `jimp`.
+
+## Routing & Local Development
+
+**Testing routes locally:**
+- Use `#/route-name` hashes: `http://localhost:5173/#/pago-confirmado`
+- Or append to pathname: `http://localhost:5173/pago-confirmado`
+- `window.location.hash` changes trigger `hashchange` event, updating the rendered view
+
+**Adding new routes:**
+1. Create component in `src/components/` (e.g., `NewPage.jsx`)
+2. Import in `App.jsx`
+3. Add check in `isRoute()` logic
+4. Add route name to `generate-static-routes.cjs` routes array
+5. Run `npm run build:full` to generate static subdirectories
+
+## Styling & Theming
+
+All design tokens defined in `:root` of `src/index.css`:
+- **Dark theme:** `--color-bg`, `--color-text`, `--color-text-secondary`
+- **Accent:** `--color-accent: #F57624` (orange), plus `--color-accent-rgb` and `--color-accent-glow` for computed values
+- **Spacing rhythm:** Uses `--spacing-*` variables; sections use `--spacing-section: 4rem`
+- **Responsive:** Uses `clamp()` for headings and `--container-width: 1100px` for max-width layouts
+
+Modify `:root` variables to update theme globally.
+
+## Currently Unused Components
+
+- `WorkshopBanner.jsx` — commented out in `App.jsx`. Uncomment `{/* <WorkshopBanner /> */}` below `<Header />` to enable.
+- `OnboardingModal.jsx` — imported but not currently rendered in any route

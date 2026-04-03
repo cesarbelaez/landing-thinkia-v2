@@ -118,15 +118,7 @@ const Section4 = () => {
                 <div className={`footer-cta ${isVisible ? 'visible' : ''}`}>
                     <p>Si esto resuena contigo, estás en el lugar correcto.</p>
                     <div className="btn-group">
-                        <a href="#reserva" className="btn-link btn-primary">Reservar mi lugar</a>
-                        <a
-                            href="https://wa.me/573332823082?text=Hola,%20estoy%20interesado%20en%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20AI%20Builder%20Program."
-                            className="btn-link btn-secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Hablar por WhatsApp
-                        </a>
+                        <a href="#reserva" className="btn-link btn-primary">RESERVAR CUPO</a>
                     </div>
                 </div>
 

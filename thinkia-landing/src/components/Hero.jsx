@@ -96,7 +96,7 @@ const Hero = () => {
                     maxWidth: '450px'
                 }}>
                     <a href="#reserva" className="hero-btn" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        APLICAR AHORA
+                        RESERVAR CUPO
                     </a>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'center', width: '100%' }}>

@@ -240,18 +240,6 @@ const Section6 = () => {
                     </div>
                 </div>
 
-                {/* Final CTA */}
-                <div className="final-cta-container">
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc2TV7PKG9hjkePaTSB6PfTOAPOlQfNvUdLGigUtAbB0LnkFQ/viewform"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-ai-builder"
-                    >
-                        QUIERO SER PARTE DE LA PRÓXIMA GENERACIÓN
-                        <div className="btn-glow-effect" />
-                    </a>
-                </div>
 
                 <OnboardingModal
                     isOpen={modalConfig.isOpen}
